@@ -10,7 +10,7 @@
 ## Domain
 
 <!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
-
+I choose a domain that goes over rate my professor reviews on the Computer Science Department at my university(University of Houston-Downtown). This knowledge is valulable because it gives students the option to look over professors overall personality,workload for many courses. Its really not hard to find reviews for each professor, but there are times where some reviews might be outdated or not enough reviews are posted for some professors.
 ---
 
 ## Documents
@@ -20,16 +20,16 @@
 
 | # | Source | Description | URL or location |
 |---|--------|-------------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | | | |   Kamto:       https://www.ratemyprofessors.com/professor/2633588
+| 2 | | | |   Yilamaz:     https://www.ratemyprofessors.com/professor/2690400
+| 3 | | | |   Pakhrin:     https://www.ratemyprofessors.com/professor/2889570
+| 4 | | | |   Harris:      https://www.ratemyprofessors.com/professor/2051130
+| 5 | | | |   Xu:          https://www.ratemyprofessors.com/professor/2179343
+| 6 | | | |   Lin:         https://www.ratemyprofessors.com/professor/173959
+| 7 | | | |   Zhang:       https://www.ratemyprofessors.com/professor/2361808
+| 8 | | | |   Izadi:       https://www.ratemyprofessors.com/professor/2918727
+| 9 | | | |   Yuan:        https://www.ratemyprofessors.com/professor/549688
+| 10 | | | |  Reddit       https://www.reddit.com/r/uhd/comments/18de5n2/cs_classes_prof_info_please/
 
 ---
 
@@ -41,10 +41,12 @@
      A review-heavy corpus warrants different chunking than a long FAQ. -->
 
 **Chunk size:**
-
+ 250 Tokens
 **Overlap:**
+18%
 
 **Reasoning:**
+Balances out the structure and perveres the broader context for each professor
 
 ---
 
@@ -57,11 +59,13 @@
      support, accuracy on domain-specific text, latency? -->
 
 **Embedding model:**
+sentence-transformers
 
 **Top-k:**
+40
 
 **Production tradeoff reflection:**
-
+Latency, multillingual
 ---
 
 ## Evaluation Plan
@@ -73,11 +77,11 @@
 
 | # | Question | Expected answer |
 |---|----------|-----------------|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| 1 | | Which professors (top3) quizzes, assignments are most aligned to tests, final exam? |Xu, Yilamaz, Harris
+| 2 | | Which professors (top3) is the most lenient for assignement late due dates? | Xu, Yilanaz, Zhang
+| 3 | | What professors (top 3) do students pefer for taking Elective classes? |Xu, 
+| 4 | | What do students say there worst experience is for each professor? | Unfair Grading, misunderstood due dates
+| 5 | |What professors (top3) do students pefer taking for Core CS courses? | Xu, Yilamaz, Zhang
 
 ---
 
@@ -87,9 +91,9 @@
      Consider: noisy or inconsistent documents, missing source attribution, off-topic
      retrieval, chunks that split key information across boundaries. -->
 
-1.
+1. Chunks that split key information across boundaries
 
-2.
+2. Misaligned data, not very specific to the question but deters from the main point by adding a bunch of non-sence irrelevant information.
 
 ---
 
@@ -101,15 +105,24 @@
      You can use ASCII art, a Mermaid diagram, or embed a sketch as an image.
      You'll use this diagram as context when prompting AI tools to implement each stage. -->
 
+![alt text](diagram.JPG)
 ---
 
 ## AI Tool Plan
 
 <!-- For each part of the pipeline below, describe:
      - Which AI tool you plan to use (Claude, Copilot, ChatGPT, etc.)
+     = Grok
+     
      - What you'll give it as input (which sections of this planning.md, which requirements)
+     = I'll give Claude my Chunking Strategy section and ask it to implement chunk_text()
+     with my specified chunk size and overlap" is a plan.
+
      - What you expect it to produce
+     = Consice, straight to the point answers. A couple of sentences the most with showing analytics.
+
      - How you'll verify the output matches your spec
+     = Rigerous testing
 
      "I'll use AI to help me code" is not a plan.
      "I'll give Claude my Chunking Strategy section and ask it to implement chunk_text()
