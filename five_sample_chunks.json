@@ -1,0 +1,62 @@
+[
+  {
+    "professor_name": "Cyril Harris",
+    "professor_id": null,
+    "school_name": "University of Houston Downtown",
+    "school_id": null,
+    "source_url": null,
+    "course": "CS3304",
+    "rating_overall": 4.0,
+    "difficulty": 3.0,
+    "date": "May 3rd, 2026",
+    "review_text": "Honestly, he wasn't that bad. Like his lectures were pretty straightforward. His exams were the coding practices he gave in class, as long as you practiced them you should be good. He gives inspirational speeches now and then. You will learn coding really well!"
+  },
+  {
+    "professor_name": "Shengli Yuan",
+    "professor_id": null,
+    "school_name": "University of Houston Downtown",
+    "school_id": null,
+    "source_url": null,
+    "course": "CS3324",
+    "rating_overall": 1.0,
+    "difficulty": 5.0,
+    "date": "Sep 17th, 2022",
+    "review_text": "1st assignment requires you to know C language.  One of the student asked for help during class and his response was to search in google for help.  All quizzes are timed, ex: 2 minutes for 2 questions.  First few quizzes are easy and then they get very difficult.  He makes topics difficult to understand that what they truly are.  Worst CS professor"
+  },
+  {
+    "professor_name": "Azadeh Izadi",
+    "professor_id": null,
+    "school_name": "University of Houston Downtown",
+    "school_id": null,
+    "source_url": null,
+    "course": "CS-1411",
+    "rating_overall": 1.0,
+    "difficulty": 5.0,
+    "date": "Mar 25th, 2026",
+    "review_text": "Unreasonable work load for an intro class. Do not take her if you want to stay sane."
+  },
+  {
+    "professor_name": null,
+    "professor_id": null,
+    "school_name": null,
+    "school_id": null,
+    "source_url": null,
+    "course": "CS4315",
+    "rating_overall": 5.0,
+    "difficulty": 1.0,
+    "date": "Dec 11th, 2024",
+    "review_text": "Dr. Ling Xu is very good at teaching but she likes discipline and she is very principled. I did not see or noticed anything objectionable. I rate her as one of the best I ever experienced. She is a good but honest grader. My best wishes to her."
+  },
+  {
+    "professor_name": "Subash Pakhrin",
+    "professor_id": null,
+    "school_name": "University of Houston Downtown",
+    "school_id": null,
+    "source_url": null,
+    "course": "CS4317",
+    "rating_overall": 5.0,
+    "difficulty": 2.0,
+    "date": "Jun 10th, 2025",
+    "review_text": "EZPZ lemon squeezy. Kind of hard to understand through his accent but eventually you'll understand what he's trying to say. He talks very fast since there's so much material to go over. He gives out exam reviews and they're exactly the same as the exams so start studying early and you will pass easily. Very interesting class because of his teaching"
+  }
+]

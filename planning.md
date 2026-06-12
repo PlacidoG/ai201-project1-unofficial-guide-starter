@@ -112,7 +112,7 @@ Latency, multillingual
 
 <!-- For each part of the pipeline below, describe:
      - Which AI tool you plan to use (Claude, Copilot, ChatGPT, etc.)
-     = Grok
+     = Claude
      
      - What you'll give it as input (which sections of this planning.md, which requirements)
      = I'll give Claude my Chunking Strategy section and ask it to implement chunk_text()
